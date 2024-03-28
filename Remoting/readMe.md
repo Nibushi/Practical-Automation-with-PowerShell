@@ -82,10 +82,12 @@ Add-WindowsCapability -Online -Name OpenSSH.Client
 Add-WindowsCapability -Online -Name OpenSSH.Server
 
 # Set the SSH Server Service to start Automatically
+# Might need to restart the machine before you can do the following
 Set-Service -Name sshd -StartupType "Automatic"
 Start-Service -Name sshd
 
 # Install and Import PowerShell remoting module
+# Will require PS7 or greater
 Install-Module -Name Microsoft.PowerShell.RemotingTools
 Import-Module -Name Microsoft.PowerShell.RemotingTools
 

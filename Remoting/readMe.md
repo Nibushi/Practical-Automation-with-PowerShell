@@ -42,7 +42,11 @@ Enable-PSRemoting -Force -SkipNetworkProfileCheck
 
 ```
 
+What happens when you run Quick Configuration:
+
 ![alt text](set-wsman-quickconfig.png)
+
+Service called Windows Remote Management (WS-Management) - Win RM is started
 
 ### Set up Remoting for Non-Administrators
 

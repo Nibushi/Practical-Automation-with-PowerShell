@@ -60,9 +60,23 @@ Could use local security groups
 Can also enable via GPO
 
 - GPO Policy Management
-- Computer Configuration
+- Computer Configuration > Policies > Admin Templates > Windows Components
 - Windows Remote Management (WinRM) settings
 - Set the Allow option for WinRM Service
+- Allow remote server management through WinRM
+
+For firewall settings
+- Comp Config > Policies > Windows Settings > Security Settings
+- Windows Defender Firewall with adv. security
+- Inbound rules
+- New Rule > Predefined > Windows Remote Management
+- This will add the 2 rules
+
+For system services
+- Comp Config > Policies > Windows Settings > Security Settings
+- System Services
+- Windows Remote Management (WS-Management)
+- Define Policy Setting > Startup Mode > Automatic
 
 ### Enabling SSH PowerShell Remoting
 

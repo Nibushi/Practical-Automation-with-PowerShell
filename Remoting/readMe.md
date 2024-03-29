@@ -66,6 +66,7 @@ Can also enable via GPO
 - Allow remote server management through WinRM
 
 For firewall settings
+
 - Comp Config > Policies > Windows Settings > Security Settings
 - Windows Defender Firewall with adv. security
 - Inbound rules
@@ -73,6 +74,7 @@ For firewall settings
 - This will add the 2 rules
 
 For system services
+
 - Comp Config > Policies > Windows Settings > Security Settings
 - System Services
 - Windows Remote Management (WS-Management)
